@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages/pages_front/home');
 });
+
+Route::get('/home', [FrontController::class, 'index']);
+Route::get('/tentang', [FrontController::class, 'tentang']);
+Route::get('/artikel', [FrontController::class, 'artikel']);
