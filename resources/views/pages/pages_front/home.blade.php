@@ -17,6 +17,7 @@
     @endsection
 
     @section('konten')
+
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsa magni suscipit inventore aliquam ullam delectus, reprehenderit aspernatur aperiam rerum?
     </p>
     <p>

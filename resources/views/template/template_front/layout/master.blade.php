@@ -13,11 +13,23 @@
 @include('template.template_front.partials.headers')
 @include('template.template_front.partials.carousel')
 
-<div class="container">
-{{-- Bagian konten --}}
-<h1>Ini Halaman @yield('nama_halaman')</h1>
-@yield('konten')
-  </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 border border-2">
+            {{-- Bagian konten --}}
+            <h1>Ini Halaman @yield('nama_halaman')</h1>
+            @yield('konten')
+        </div>
+
+        <div class="col-md-4 border border-2">
+            <h1>Ini Post Terbaru</h1>
+            @yield('nama_halaman')
+        </div>
+    </div>
+ </div>
+
+
+</div>
 
 
 
